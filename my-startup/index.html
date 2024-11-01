@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitLife Gyms</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="banner">
+    <div class="container">
+      <h1>FitLife Gyms</h1>
+      <h2>Your journey to a healthier life starts here</h2>
+      <a href="#form-section" class="btn-blue" id="open-form">Join Now</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Our Locations</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="New York">
+        <h3>New York</h3>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/2404843/pexels-photo-2404843.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Los Angeles">
+        <h3>Los Angeles</h3>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Chicago">
+        <h3>Chicago</h3>
+      </div>
+    </div>
+  </div>
+
+  <div id="form-section" class="container">
+    <h2>Join FitLife Gyms</h2>
+    <iframe src="https://3h5fp8lb5jh.typeform.com/to/XLT6CQnM" width="100%" height="600px" frameborder="0" allow="fullscreen; autoplay"></iframe>
+  </div>
+
+  <script>
+    document.getElementById('open-form').addEventListener('click', function(event) {
+      event.preventDefault();
+      document.getElementById('form-section').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

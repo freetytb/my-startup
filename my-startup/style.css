@@ -1,0 +1,126 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  background-image: url('https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.btn-blue {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.btn-blue:hover {
+  background-color: #2980b9;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex-basis: calc(33.333% - 20px);
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour l’animation */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Agrandissement au survol */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre accentuée au survol */
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 15px;
+  margin: 0;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-basis: 100%;
+  }
+}
+
+/* Form Section */
+#form-section {
+  background-color: #f4f4f4;
+  padding: 40px;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+#form-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#form-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form-section label {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+#form-section input {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#form-section button {
+  margin-top: 20px;
+  width: 100%;
+  max-width
